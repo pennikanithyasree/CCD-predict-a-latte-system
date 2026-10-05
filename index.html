@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CCD Predict-a-Latte</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            ☕ CCD Predict-a-Latte
+        </div>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#orders">My Orders</a>
+        </div>
+    </nav>
+
+
+    <!-- Welcome Section -->
+    <section class="hero">
+
+        <div>
+            <h1>Welcome to CCD</h1>
+
+            <p>
+                Check drink availability and estimated waiting time
+                before placing your order.
+            </p>
+
+            <a href="#menu" class="main-button">
+                View Menu
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- Menu Section -->
+    <section id="menu" class="section">
+
+        <h2>Today's Menu</h2>
+
+        <p class="section-description">
+            Live availability of drinks at Campus CCD
+        </p>
+
+
+        <div class="menu-container">
+
+            <!-- Latte -->
+            <div class="drink-card">
+
+                <div class="drink-icon">
+                    ☕
+                </div>
+
+                <h3>Latte</h3>
+
+                <p class="price">
+                    ₹120
+                </p>
+
+                <p>
+                    Estimated waiting time:
+                    <strong>5 minutes</strong>
+                </p>
+
+                <span class="available">
+                    ● Available
+                </span>
+
+                <button onclick="placeOrder('Latte', 5)">
+                    Order Now
+                </button>
+
+            </div>
+
+
+            <!-- Cappuccino -->
+            <div class="drink-card">
+
+                <div class="drink-icon">
+                    ☕
+                </div>
+
+                <h3>Cappuccino</h3>
+
+                <p class="price">
+                    ₹130
+                </p>
+
+                <p>
+                    Estimated waiting time:
+                    <strong>8 minutes</strong>
+                </p>
+
+                <span class="low-stock">
+                    ● Low Stock
+                </span>
+
+                <button onclick="placeOrder('Cappuccino', 8)">
+                    Order Now
+                </button>
+
+            </div>
+
+
+            <!-- Cold Coffee -->
+            <div class="drink-card">
+
+                <div class="drink-icon">
+                    🥤
+                </div>
+
+                <h3>Cold Coffee</h3>
+
+                <p class="price">
+                    ₹140
+                </p>
+
+                <p>
+                    Estimated waiting time:
+                    <strong>6 minutes</strong>
+                </p>
+
+                <span class="available">
+                    ● Available
+                </span>
+
+                <button onclick="placeOrder('Cold Coffee', 6)">
+                    Order Now
+                </button>
+
+            </div>
+
+
+            <!-- Chocolate Shake -->
+            <div class="drink-card">
+
+                <div class="drink-icon">
+                    🥤
+                </div>
+
+                <h3>Chocolate Shake</h3>
+
+                <p class="price">
+                    ₹150
+                </p>
+
+                <p>
+                    Estimated waiting time:
+                    <strong>10 minutes</strong>
+                </p>
+
+                <span class="sold-out">
+                    ● Sold Out
+                </span>
+
+                <button class="disabled-button" disabled>
+                    Sold Out
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Order Status -->
+    <section id="orders" class="order-section">
+
+        <h2>Order Status</h2>
+
+        <div id="order-message">
+
+            <p>
+                You have not placed an order yet.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 CCD Predict-a-Latte
+        </p>
+
+        <p>
+            Smart Campus Cafe Management System
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

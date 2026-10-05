@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f3ee;
+    color: #333;
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+    height: 70px;
+    background-color: #4b2e1f;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    color: white;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+.nav-links a:hover {
+    color: #f4c27a;
+}
+
+
+/* Hero Section */
+
+.hero {
+    min-height: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        rgba(75, 46, 31, 0.85),
+        rgba(75, 46, 31, 0.85)
+    );
+    
+    color: white;
+
+    padding: 40px;
+}
+
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+
+.main-button {
+    display: inline-block;
+
+    background-color: #d99a4e;
+
+    color: white;
+
+    padding: 14px 30px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.main-button:hover {
+    background-color: #c58238;
+}
+
+
+/* General Sections */
+
+.section {
+    padding: 60px 8%;
+
+    text-align: center;
+}
+
+
+.section h2 {
+    font-size: 32px;
+
+    color: #4b2e1f;
+
+    margin-bottom: 10px;
+}
+
+
+.section-description {
+    color: #777;
+
+    margin-bottom: 35px;
+}
+
+
+/* Menu */
+
+.menu-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 25px;
+}
+
+
+/* Drink Card */
+
+.drink-card {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.2s;
+}
+
+
+.drink-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.drink-icon {
+    font-size: 50px;
+
+    margin-bottom: 15px;
+}
+
+
+.drink-card h3 {
+    font-size: 23px;
+
+    color: #4b2e1f;
+
+    margin-bottom: 10px;
+}
+
+
+.price {
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+.drink-card p {
+    margin-bottom: 15px;
+}
+
+
+/* Availability */
+
+.available {
+    display: block;
+
+    color: green;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+.low-stock {
+    display: block;
+
+    color: orange;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+.sold-out {
+    display: block;
+
+    color: red;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+/* Buttons */
+
+.drink-card button {
+    border: none;
+
+    background-color: #4b2e1f;
+
+    color: white;
+
+    padding: 12px 25px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+
+.drink-card button:hover {
+    background-color: #6b422d;
+}
+
+
+.disabled-button {
+    background-color: #999 !important;
+
+    cursor: not-allowed !important;
+}
+
+
+/* Order Section */
+
+.order-section {
+    padding: 50px 8%;
+
+    text-align: center;
+
+    background-color: #eee5dc;
+}
+
+
+.order-section h2 {
+    color: #4b2e1f;
+
+    margin-bottom: 20px;
+}
+
+
+#order-message {
+    background-color: white;
+
+    max-width: 600px;
+
+    margin: auto;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #4b2e1f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    line-height: 1.8;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 15px;
+
+        height: auto;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .nav-links {
+        gap: 15px;
+    }
+
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+
+    .hero p {
+        font-size: 16px;
+    }
+
+}
